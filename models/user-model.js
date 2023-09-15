@@ -1,9 +1,10 @@
 const { Schema, model } = require('mongoose')
 
-const OrderSchema = new Schema({
-    orderId: String,
-    item: String
+const UserSchema = new Schema({
+    username: String,
+    password: String
 })
 
-const Order = model("order", OrderSchema)
+const User = model("user", UserSchema)
 
+module.exports = User
